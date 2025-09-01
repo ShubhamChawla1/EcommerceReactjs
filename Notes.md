@@ -8,7 +8,7 @@ Step 5 : Change the title -> public -> index.html
 
 Step 6 :  Create folder Structure src -> Components, Context, Pages
 
-Step 7 :  Create folder structure Components -> Assets , Navbar -> Navbar.jsx
+Step 7 :  Create folder structure Components -> Assets , Navbar -> Navbar.jsx, Navbar.css
 
 Step 8 : Add Navbar.jsx in App.js
 
@@ -16,4 +16,7 @@ step 9 : Navbar.jsx -> rfce -> className : navbar
 
 Step 10 copy paste the Assets folder from google drive 
 
+Step 11 create navbar using html + css 
+
+step 12 create useState variable change the state of the underline in shop ul
 ->
