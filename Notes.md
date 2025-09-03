@@ -34,5 +34,56 @@ Create Routes for Route
 Step 15 Link this Route with the Navigation bar
 use Link tag
 
+Step 16 Create Hero Component for our Shop Page
+In Components -> Create Hero folder -> Hero.jsx -> rafce -> write html 
+-> Hero.css -> Write Css
+
+Mount this Hero.jsx in Shop.jsx
+
+Step 17 Components -> items(folder) -> item.jsx -> rafce -> Write HTML
+-> item.css -> css
+
+We use this item in different component
+So create the popular component for our shop page
+
+Step 18 Components -> Popular -> Popular.jsx -> rafce
+Popular.css
+
+Here we use data.js file for products
+
+we import this data_product in our popular component
+
+popular.jsx 
+
+popular.css for design popular.jsx
+
+Step 19 Create offer banner for our shop page Components 
+-> Offers 
+-> Offers.jsx
+-> Offers.css 
+
+import Offers.css to Offers.jsx
+
+Mount this Offers.jsx to Shop.jsx
+
+
+Step 20 Create Collection Components Where ever our new added product displayed
+
+
+We will map the new collection data with in the state using Item Components 
+
+NewCollections 
+-> NewCollections.jsx
+-> NewCollections.css (Css property same of popular.css)
+
+Now we will mount this components in Shop.jsx
+
+
+Step 21 Now Create Newsletter Subscription box
+NewsLetter -> NewsLetter.jsx 
+-> NewsLetter.css
+
+
+ 
 
 ->
