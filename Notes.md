@@ -83,6 +83,13 @@ Step 21 Now Create Newsletter Subscription box
 NewsLetter -> NewsLetter.jsx 
 -> NewsLetter.css
 
+Now Mount this NewsLetter component in Shop.jsx
+
+We change in newCollectiontion.css only newcollection remove height and add margin-bottom 
+
+Step 22 Create  Footer component -> Footer.jsx 
+-> Footer.css
+
 
  
 
