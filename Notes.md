@@ -90,7 +90,45 @@ We change in newCollectiontion.css only newcollection remove height and add marg
 Step 22 Create  Footer component -> Footer.jsx 
 -> Footer.css
 
+For Now we done created Home page means shop page 
 
+Now we want to create ShopCategories Page where we filter mens women and kids product 
+
+Step 23 First we create Context using Context API
+-> ShopContext.jsx 
+
+Step 24 come to index.js file wrap this <App/> inside in ShopContextProvider using this we provider ShopContext data to all pages 
+
+Step 25 Create CSS Folder in Pages Folder
+CSS -> ShopCategory.css
+
+import ShopCategory.css to ShopCategory.jsx 
+
+In ShopCategory.jsx Here we insert all product data using Context
+
+
+import banner in App.js 
+import men_banner
+import women_banner
+import kid_banner
+
+Now pass this banner through props in Routes in App.js
+
+In ShopCategory.jsx -> Here we create HTML Structure for ShopCategory page
+
+
+Design ShopCategory Css 
+
+add className in img banner in ShopCategory.jsx 
+
+Step 26 Design our login page
+->
+
+<!-
  
+45 minutes -> Project 
+React Hooks 
+Js 15 Video
+Bugs 
 
 ->
