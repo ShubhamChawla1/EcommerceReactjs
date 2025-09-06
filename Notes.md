@@ -122,11 +122,34 @@ Design ShopCategory Css
 add className in img banner in ShopCategory.jsx 
 
 Step 26 Design our login page
+
+Step 27 Create Product Page
+
+Create Breadcrums folder in Components
+->Breadcrum.jsx
+->Breadcrum.css
+
+Step 28 Now we will create the product display Component(Where we got all the productImages and other details)
+Product Display -> ProductDisplay.jsx 
+                -> ProductDisplay.css
+
+Now Mount this ProductDisplay.jsx in Product.jsx   
+
+Now we will create description box for our product page
+
+DescriptionBox folder -> DescriptionBox.jsx 
+-> DescriptionBox.css
+
+Mount this DescriptionBox.jsx in our Product.jsx
+
+Step 29 : Create RelativeProducts Components
+-> RelativeProducts.jsx
+
 ->
 
 <!-
  
-45 minutes -> Project 
+<!-- Project Complete 
 React Hooks 
 Js 15 Video
 Bugs 
