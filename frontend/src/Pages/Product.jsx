@@ -4,6 +4,7 @@ import Breadcrum from '../Components/Breadcrums/Breadcrum';
 import {ShopContext} from '../Context/ShopContext'
 import { ProductDisplay } from '../Components/ProductDisplay/ProductDisplay';
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox';
+import RelatedProducts from '../Components/RelatedProducts/RelatedProducts';
 export const Product = () => {
   // Here we grab all Product data using Context
   // within useContext -> ShopContext
@@ -19,6 +20,7 @@ export const Product = () => {
       <Breadcrum product={product}/>
       <ProductDisplay product={product}/> {/* using this props(product) we display our product image, title , prices*/}
       <DescriptionBox/>
+      <RelatedProducts/>
     </div>
   )
 }

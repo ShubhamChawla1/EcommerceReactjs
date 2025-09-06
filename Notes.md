@@ -142,8 +142,42 @@ DescriptionBox folder -> DescriptionBox.jsx
 
 Mount this DescriptionBox.jsx in our Product.jsx
 
-Step 29 : Create RelativeProducts Components
--> RelativeProducts.jsx
+Step 29 : Create RelatedProducts Components
+-> RelatedProducts.jsx
+-> RelatedProducts.css
+
+Mount this component in Product.jsx file
+
+
+When we click on realted products it not scroll it top of the page
+
+Add this event onClick={window.scrollTo(0,0)} in Item.jsx in Img tag
+
+
+
+Functionality for Add to Cart button
+open Context -> ShopContext.jsx
+Create 
+Create one empty cart -> getDefaultCart
+Const[cartItems]
+Add CartItems in Const contextVAlue
+AddTocart and Remove Cart Functionality
+
+Add CartItems, AddToCart , removeFromCart in Const ContextValue
+
+In ProductDisplay.jsx
+Here we import AddToCart Function through over contextAPI
+
+
+// Create Cart page -> Cart.jsx
+For our Cart create a Component CartItem -> CartItem.jsx , CartItem.css 
+
+Now Mount this Component in our Cart Page
+
+
+
+Create a logic for Cart Count
+In ShopContext.jsx 
 
 ->
 
