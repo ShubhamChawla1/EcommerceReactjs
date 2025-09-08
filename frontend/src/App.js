@@ -10,15 +10,23 @@ import Footer from './Components/Footer/Footer';
 import men_banner from './Components/Assets/banner_mens.png'
 import women_banner from './Components/Assets/banner_women.png'
 import kid_banner from './Components/Assets/banner_kids.png'
+import { useEffect, useState } from 'react';
 
 // const hideFooterRoutes = ["/login"]; // use path, not component name
 
 function App() {
   // const location = useLocation(); // ✅ correct way to access location
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
 
+  useEffect(() => {
+    document.body.className = darkMode ? "dark-theme" : "light-theme"; 
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  },[darkMode]);
   return (
     <div>
-      <Navbar />
+      <Navbar toggleTheme={() => setDarkMode(!darkMode)} darkMode={darkMode}/>
       <Routes>
         <Route path='/' element={<Shop />} />
         <Route path='/mens' element={<ShopCategory banner={men_banner} category="men" />} />

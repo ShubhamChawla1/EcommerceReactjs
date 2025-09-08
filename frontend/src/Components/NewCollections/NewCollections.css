@@ -30,3 +30,12 @@
     gap : 30px;
 }
 
+.dark-theme .new-collections h1{
+    color: white;
+}
+
+.dark-theme .new-collections hr{
+    border: 1px solid white;
+    background: white;
+
+}

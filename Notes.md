@@ -180,12 +180,3 @@ Create a logic for Cart Count
 In ShopContext.jsx 
 
 ->
-
-<!-
- 
-<!-- Project Complete 
-React Hooks 
-Js 15 Video
-Bugs 
-
-->

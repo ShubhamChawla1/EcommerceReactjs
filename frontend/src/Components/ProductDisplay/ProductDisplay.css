@@ -81,6 +81,7 @@
     border: 1px solid #ebebeb;
     border-radius: 3px;
     cursor: pointer;
+    
 
 }
 
@@ -106,4 +107,14 @@
     font-weight: 600;
     
     
+}
+
+.dark-theme .productdisplay-right h1{
+    color: white;
+}
+
+.dark-theme .productdisplay-right-sizes div{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
 }

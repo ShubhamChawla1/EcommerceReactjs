@@ -8,3 +8,7 @@
     margin : 20px 170px;
     text-transform: capitalize;
 }
+
+.dark-theme .breadcrum{
+    color: white;
+}

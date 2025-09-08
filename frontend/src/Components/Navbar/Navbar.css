@@ -34,6 +34,7 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+    
 }
 
 .nav-menu hr{
@@ -80,4 +81,30 @@
     font-size: 14px;
     background: red;
     color: white;
+}
+
+.navbar button {
+  position: relative;
+  z-index: 1000;
+  margin-left: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: rgb(121, 121, 182);
+  font-size: 20px;
+  font-weight: 700;
+  outline : none;
+}
+
+.dark-theme .nav-logo p{
+    filter: invert(1);
+}
+
+.dark-theme .nav-login-cart img{
+    filter: invert(1);
+}
+
+.dark-theme .nav-menu li{
+  filter: invert(1);
 }

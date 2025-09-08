@@ -9,7 +9,7 @@
 .footer-logo{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
 }
 
@@ -61,4 +61,8 @@
     height: 3px;
     background: #c7c7c7;
 
+}
+
+.dark-theme .footer-links, .footer-copyright, .footer-logo p{
+    color: White;
 }

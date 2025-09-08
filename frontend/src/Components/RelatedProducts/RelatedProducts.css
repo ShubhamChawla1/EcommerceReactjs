@@ -27,3 +27,12 @@
     gap: 30px;
     
 }
+
+.dark-theme .relatedproducts h1{
+    color: white;
+}
+
+.dark-theme .relatedproducts hr{
+    border: 1px solid white;
+    background: white;
+}

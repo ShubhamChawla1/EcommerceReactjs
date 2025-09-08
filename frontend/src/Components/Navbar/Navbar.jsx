@@ -5,7 +5,7 @@ import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
-export const Navbar = () => {
+export const Navbar = ({toggleTheme, darkMode}) => {
        const [menu, setMenu] = useState("shop");
        const {getTotalCartItems} = useContext(ShopContext);
 
@@ -26,7 +26,9 @@ export const Navbar = () => {
         <Link to='/cart'><img src={cart_icon} alt="" /></Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
     </div>    
-
+      <button onClick={toggleTheme}>
+  {darkMode ? "☀️ Light" : "🌙 Dark"}
+</button>
     </div>
   )
 }

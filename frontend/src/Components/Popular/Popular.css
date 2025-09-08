@@ -26,3 +26,12 @@
     gap: 30px;
     
 }
+
+.dark-theme .popular h1 {
+  color: white;
+}
+
+.dark-theme .popular hr {
+  border: 1px solid white;
+  background-color: white;
+}

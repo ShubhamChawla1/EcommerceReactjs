@@ -106,3 +106,21 @@
     color: white;
     cursor: pointer;
 }
+
+.cart-empty{
+    font-size: 26px;
+    text-align: center;
+}
+
+.dark-theme .cartitems-format-main p{
+    color: white;
+}
+
+.dark-theme .cartitems-format-main hr{
+    border: 1px solid white;
+    background: white;
+}
+
+.dark-theme .cartitems-promocode p{
+    color: white ;
+}

@@ -70,3 +70,50 @@
     font-weight: 500;
 }
 
+/* Light theme (default) */
+.loginsignup {
+  width: 100%;
+  height: 80vh;
+  background: #fce3fe;  /* light pink */
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.loginsignup-container {
+  width: 580px;
+  height: 600px;
+  background: white;
+  margin: auto;
+  padding: 40px 60px;
+  color: #000;
+}
+
+/* Dark theme overrides */
+body.dark-theme .loginsignup {
+  background: #1e1e1e;   /* dark background */
+}
+
+body.dark-theme .loginsignup-container {
+  background: #2c2c2c;   /* dark card */
+  color: #fff;
+}
+
+body.dark-theme .loginsignup-fields input {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-theme .loginsignup-container button {
+  background: #ff4141;   /* keep red button */
+  color: white;
+}
+
+body.dark-theme .loginsignup-login {
+  color: #ccc;
+}
+
+body.dark-theme .loginsignup-login span {
+  color: #ff8080;  /* lighter red in dark mode */
+}
+
