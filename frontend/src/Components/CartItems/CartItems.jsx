@@ -94,7 +94,7 @@ const CartItems = (product) => {
         </>
       ) : (
         // ✅ Empty cart message
-        <p className="cart-empty"> No Item in Card <br/> 🛒 Add a product in cart</p>
+        <p className="cart-empty"> No Item in Cart <br/> 🛒 Add a product in cart</p>
       )}
     </div>
   );
