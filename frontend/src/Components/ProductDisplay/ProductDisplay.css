@@ -118,3 +118,23 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+
+.quantity-controls {
+  display: flex;
+  width: 120px;
+  margin-top: 15px;
+}
+
+.quantity-controls button {
+  background-color: #ff4141;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.quantity-controls span {
+  font-weight: bold;
+}

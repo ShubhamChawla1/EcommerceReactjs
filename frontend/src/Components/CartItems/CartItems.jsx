@@ -3,9 +3,14 @@ import './CartItems.css'
 import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
 
-const CartItems = () => {
-  const { getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext);
-
+const CartItems = (product) => {
+  const { getTotalCartAmount, all_product, cartItems, removeFromCart, deleteFromCart } = useContext(ShopContext);
+  
+   // Import AddToCart Function using ContextAPI from ShopContext.jsx
+      const { addToCart} = useContext(ShopContext); // Now we have addToCart function in this function we will pass the productId First link this function to AddToCart button
+    
+      // quantity of this product in cart
+    // const productQuantity = cartItems[product.id] || 0;
   // check if cart is empty
   const hasItems = all_product.some((e) => cartItems?.[e.id] > 0);
 
@@ -32,12 +37,19 @@ const CartItems = () => {
                     <img src={e.image} alt="" className="carticon-product-icon" />
                     <p>{e.name}</p>
                     <p>${e.new_price}</p>
-                    <button className="cartitems-quantity">{cartItems[e.id]}</button>
+                    {/* ✅ Conditional Rendering */}
+         
+          <div className="quantity-controls">
+            <button onClick={() => removeFromCart(e.id)}>-</button>
+            <button><span>{cartItems[e.id]}</span></button>
+            <button onClick={() => addToCart(e.id)}>+</button>
+          </div>
+        
                     <p>${e.new_price * cartItems[e.id]}</p>
                     <img
                       className="cartitems-remove-icon"
                       src={remove_icon}
-                      onClick={() => removeFromCart(e.id)}
+                      onClick={() => deleteFromCart(e.id)}
                       alt="remove"
                     />
                   </div>

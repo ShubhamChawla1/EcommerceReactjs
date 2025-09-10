@@ -124,3 +124,35 @@
 .dark-theme .cartitems-promocode p{
     color: white ;
 }
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;         /* space between buttons and number */
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  background-color: #ff4141;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+ 
+  font-weight: bold;
+  
+}
+
+.quantity-controls button:hover {
+  background-color: #e63b3b;
+}
+
+.quantity-controls span {
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 25px;   /* keeps number centered */
+  text-align: center;
+  display: inline-block;
+}

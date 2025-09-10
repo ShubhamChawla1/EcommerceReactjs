@@ -11,8 +11,13 @@ export const ProductDisplay = (props) => {
     const {product} = props;
 
     // Import AddToCart Function using ContextAPI from ShopContext.jsx
-    const {addToCart} = useContext(ShopContext); // Now we have addToCart function in this function we will pass the productId First link this function to AddToCart button
-  return (
+    const { addToCart, removeFromCart, cartItems } = useContext(ShopContext); // Now we have addToCart function in this function we will pass the productId First link this function to AddToCart button
+  
+    // quantity of this product in cart
+  const productQuantity = cartItems[product.id] || 0;
+
+
+    return (
     <div className='productdisplay'>
         <div className="productdisplay-left">
             <div className="productdisplay-img-list">
@@ -56,7 +61,16 @@ export const ProductDisplay = (props) => {
                     <div>XXL</div>
                 </div>
             </div>
-            <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+              {/* ✅ Conditional Rendering */}
+        {productQuantity > 0 ? (
+          <div className="quantity-controls">
+            <button onClick={() => removeFromCart(product.id)}>-</button>
+            <button><span>{productQuantity}</span></button>
+            <button onClick={() => addToCart(product.id)}>+</button>
+          </div>
+        ) : (
+          <button onClick={() => addToCart(product.id)}>ADD TO CART</button>
+        )}
             <p className='productdisplay-right-category'><span>Category : <span>Women, T-Shirt, Crop-Top </span></span></p>
             <p className='productdisplay-right-category'><span>Tags : <span>Modern, Latest</span></span></p>
         </div>
