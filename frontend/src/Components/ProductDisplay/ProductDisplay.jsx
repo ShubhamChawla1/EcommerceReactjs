@@ -69,7 +69,13 @@ export const ProductDisplay = (props) => {
             <button onClick={() => addToCart(product.id)}>+</button>
           </div>
         ) : (
-          <button onClick={() => addToCart(product.id)}>ADD TO CART</button>
+          // <button onClick={() => addToCart(product.id)}>ADD TO CART</button>
+          <button onClick={() => {
+  console.log("Adding to cart:", product.id);  // ✅ Debug log
+  addToCart(product.id);
+}}>
+  ADD TO CART
+</button>
         )}
             <p className='productdisplay-right-category'><span>Category : <span>Women, T-Shirt, Crop-Top </span></span></p>
             <p className='productdisplay-right-category'><span>Tags : <span>Modern, Latest</span></span></p>

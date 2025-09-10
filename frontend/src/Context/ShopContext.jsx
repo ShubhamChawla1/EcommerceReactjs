@@ -5,13 +5,22 @@ export const ShopContext = createContext(null); // We Create one Context initial
 
 // Create one empty cart and in ShopContextProvider we will create one useState Variable
 
-    const getDefaultCart = ()=> {
-        let cart = {};
-        for (let index = 0; index < all_product.length+1; index++) {
-            cart[index] = 0;  // product id is 0
-        }
-        return cart;
-    }
+    // const getDefaultCart = ()=> {
+    //     let cart = {};
+    //     for (let index = 0; index < all_product.length+1; index++) {
+    //         cart[index] = 0;  // product id is 0
+    //     }
+    //     return cart;
+    // }
+
+    const getDefaultCart = () => {
+  let cart = {};
+  all_product.forEach((product) => {
+    cart[product.id] = 0;
+  });
+  return cart;
+};
+
 
 
 // Create ShopContext Provider
@@ -43,11 +52,20 @@ const ShopContextProvider = (props) => {
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
+
+
    // Create Add to Cart Functionality
-   const addToCart = (itemId) => {
-    setCartItems((prev) => ({...prev, [itemId]:prev[itemId]+1})) // :prev[itemId] this will be provided the value of that key
-    console.log(cartItems);
-   }
+  //  const addToCart = (itemId) => {
+  //   setCartItems((prev) => ({...prev, [itemId]:prev[itemId]+1})) // :prev[itemId] this will be provided the value of that key
+  //   console.log(cartItems);
+  //  }
+
+  const addToCart = (itemId) => {
+  setCartItems((prev) => ({
+    ...prev,
+    [itemId]: (prev[itemId] || 0) + 1,
+  }));
+};
 
    // update Cart Count
    const getTotalCartAmount = () => {
